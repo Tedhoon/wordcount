@@ -1,0 +1,82 @@
+h1{
+    
+    
+    color : violet;
+}
+
+body{
+    margin : 0;
+}
+
+.nav-container {
+    display: flew;
+    flex-direction: row;
+    width : 100%;
+    margin : 0 auto;
+    padding : 0;
+    background-color: violet;
+    list-style-type: none;
+    
+}
+
+
+.nav-item {
+    padding : 15px;
+    cursor : pointer;
+    
+
+}
+
+.nav-item a {
+    text-align: center;
+    text-decoration: none;
+    color : blue;
+    display : inline-block;
+    
+}
+
+.wordc {
+
+
+    display:inline-block;
+    margin-left: 5%;
+    text-align: center;
+    
+    
+}
+
+section
+
+{   
+
+
+    border-left : 3px solid violet;
+    border-right: 3px solid violet;
+    
+    margin: 0 30%;
+        
+    padding: 100px;
+    
+
+}
+
+
+.areatext{
+    color : gray;
+
+
+}
+
+.notion{
+    color : gray;
+
+}
+
+.myclass{
+    color : red;
+}
+
+.return{
+
+    float : right;
+}

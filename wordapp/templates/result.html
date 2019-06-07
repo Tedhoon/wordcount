@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordCount</title>
+
+    {% load staticfiles %}
+    <link rel='stylesheet' href="{% static 'style.css' %}">
+    {%load static%}
+
+</head>
+<body>
+    <nav>
+        <ul class = "nav-container">
+        
+            <li class = "nav-item"><a href= ""><strong>LIKELION</strong></a></li>
+            
+        <ul>    
+    </nav>
+
+
+<section>
+
+
+
+
+<p>총개수는 {{textcount}} 개입니다.</p> 
+
+
+단어 : n개
+<br>
+{%for i,v in textdic%}
+
+{{i}}={{v}} <br>
+
+{%endfor%}
+
+
+<br><div class = "return"><a href="{% url 'index'%}">돌아가기</a></div>
+</section>
+
+</body>
+</html>

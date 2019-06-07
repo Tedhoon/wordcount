@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordCount</title>
+
+    {% load staticfiles %}
+    <link rel='stylesheet' href="{% static 'style.css' %}">
+    {%load static%}
+
+</head>
+<body>
+    <nav>
+        <ul class = "nav-container">
+        
+            <li class = "nav-item"><a href= ""><strong>LIKELION</strong></a></li>
+            
+        <ul>    
+    </nav>
+
+
+<section>
+
+
+
+<div class = "wordc">
+    <h1>WORDCOUNT</h1>
+    <br>
+    
+
+    <form method="POST" action = {% url 'result' %}>
+        {% csrf_token %}
+        <textarea rows="30" cols="60" name = "sentence" onclick="this.value=''">분석하고 싶은 내용을 입력하세요</textarea>
+        <div class="myclass">{{bad_word}}</div>
+                                                                                
+        <br>
+        <input type="submit" value = "계산">
+
+    </form>
+</div>
+
+</section>
+
+</body>
+</html>
